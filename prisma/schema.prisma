@@ -10,11 +10,11 @@ datasource db {
     url      = env("DATABASE_URL")
 }
 
-model Post {
+model AIOutput {
     id        Int      @id @default(autoincrement())
-    name      String
+    content      String
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
 
-    @@index([name])
+    @@index([content])
 }
