@@ -4,10 +4,12 @@ import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 
 import OpenAI from "openai";
 
-const UPLOADED_FILE_ID='file-Twqs5gDpR8WG66UjwJBQGS'
+const FINE_TUNED_MODEL='ft:gpt-4o-mini-2024-07-18:a-bottin:ab-fine-tuned-cv:B9uu9kYI'
 
 
 const openai = new OpenAI({apiKey: process.env.OPENAI_API_KEY});
+
+console.log(process.env.OPENAI_API_KEY)
 
 export const postRouter = createTRPCRouter({
   create: publicProcedure
@@ -16,7 +18,7 @@ export const postRouter = createTRPCRouter({
 
 
     const completion = await openai.chat.completions.create({
-      model: "ft:gpt-3.5-turbo-0125:a-bottin:ab-fine-tuned-cv:B9tmutKK:ckpt-step-80",
+      model: FINE_TUNED_MODEL,
       messages: [
           { role: "developer", content: "You are a helpful assistant." },
           {
