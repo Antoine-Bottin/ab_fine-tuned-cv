@@ -1,24 +1,46 @@
-import "~/styles/globals.css";
+import '~/styles/globals.css'
 
-import { GeistSans } from "geist/font/sans";
-import { type Metadata } from "next";
+import { GeistSans } from 'geist/font/sans'
+import { type Metadata } from 'next'
 
-import { TRPCReactProvider } from "~/trpc/react";
+import { TRPCReactProvider } from '~/trpc/react'
 
 export const metadata: Metadata = {
-  title: "Antoine Bottin",
-  description: "Feel free to ask anything you want about my developer experience",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
-};
+    title: 'Antoine Bottin - Experience ',
+    description: 'Ask your questions about my experience',
+    icons: [{ rel: 'icon', url: '/favicon.ico' }],
+    keywords: [
+        'web',
+        'developer',
+        'CV',
+        'Curriculum Vitae',
+        'Antoine Bottin',
+        'software ingeneer',
+        'reactJS',
+        'NextJs',
+        'NodeJs',
+        'TypeScript',
+        'JavaScript',
+        'HTML',
+    ],
+    metadataBase: new URL('https://www.xperience.abottin.dev'),
+    openGraph: {
+        title: 'Antoine Bottin - Xperience ',
+        description: 'Ask your questions about my experience',
+        images: [{ url: '/assets/pictures/Photo_CV.jpg' }],
+        type: 'website',
+        url: 'https://www.xperience.abottin.dev',
+    },
+}
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <html lang="en" className={`${GeistSans.variable}`}>
-      <body>
-        <TRPCReactProvider>{children}</TRPCReactProvider>
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en" className={`${GeistSans.variable}`}>
+            <body>
+                <TRPCReactProvider>{children}</TRPCReactProvider>
+            </body>
+        </html>
+    )
 }
