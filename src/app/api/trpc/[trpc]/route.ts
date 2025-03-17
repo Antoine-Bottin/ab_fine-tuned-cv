@@ -1,7 +1,7 @@
 import { fetchRequestHandler } from '@trpc/server/adapters/fetch'
 import { type NextRequest } from 'next/server'
 
-// import { env } from '~/env'
+import { env } from '~/env'
 import { appRouter } from '~/server/api/root'
 import { createTRPCContext } from '~/server/api/trpc'
 
@@ -21,15 +21,16 @@ const handler = (req: NextRequest) =>
         req,
         router: appRouter,
         createContext: () => createContext(req),
-        // onError:
-        //     env.NODE_ENV === 'development'
-        //         ? ({ path, error }) => {
-        //               const err = error as Error
-        //               console.error(
-        //                   `❌ tRPC failed on ${path ?? '<no-path>'}: ${err.message}`
-        //               )
-        //           }
-        //         : undefined,
+        onError:
+            env.NODE_ENV === 'development'
+                ? ({ path, error }) => {
+                      console.log('OPENAI_API_KEY:', process.env.OPENAI_API_KEY)
+                      const err = error as Error
+                      console.error(
+                          `❌ tRPC failed on ${path ?? '<no-path>'}: ${err.message}`
+                      )
+                  }
+                : undefined,
     })
 
 export { handler as GET, handler as POST }
