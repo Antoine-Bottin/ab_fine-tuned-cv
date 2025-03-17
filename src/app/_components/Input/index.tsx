@@ -29,7 +29,7 @@ const AIInput = () => {
             },
         })
 
-    console.log(output)
+    console.log(output, isPending)
 
     return (
         <div className="w-full max-w-lg">
