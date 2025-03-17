@@ -34,7 +34,7 @@ export const postRouter = createTRPCRouter({
 
             return {
                 question: input.question,
-                answer: completion.choices[0].message.content,
+                answer: completion.choices[0]?.message.content,
             }
         }),
 })
