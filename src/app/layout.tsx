@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Antoine Bottin - Xperience ',
         description: 'Ask your questions about my experience',
-        images: [{ url: '/assets/pictures/Photo_CV.jpg' }],
+        images: [{ url: '/pictures/Photo_CV.jpg' }],
         type: 'website',
         url: 'https://www.xperience.abottin.dev',
     },
