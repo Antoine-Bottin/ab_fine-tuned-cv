@@ -24,7 +24,6 @@ const handler = (req: NextRequest) =>
         onError:
             env.NODE_ENV === 'development'
                 ? ({ path, error }) => {
-                      console.log('OPENAI_API_KEY:', process.env.OPENAI_API_KEY)
                       const err = error as Error
                       console.error(
                           `❌ tRPC failed on ${path ?? '<no-path>'}: ${err.message}`

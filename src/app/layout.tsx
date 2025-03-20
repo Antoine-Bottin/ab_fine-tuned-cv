@@ -1,4 +1,5 @@
 import '~/styles/globals.css'
+import { Analytics } from '@vercel/analytics/react'
 
 import { GeistSans } from 'geist/font/sans'
 import { type Metadata } from 'next'
@@ -39,6 +40,8 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${GeistSans.variable}`}>
             <body>
+                <Analytics />
+
                 <TRPCReactProvider>{children}</TRPCReactProvider>
             </body>
         </html>

@@ -14,8 +14,7 @@ console.log(process.env.OPENAI_API_KEY)
 export const postRouter = createTRPCRouter({
     create: publicProcedure
         .input(z.object({ question: z.string().min(1) }))
-        .mutation(async ({ ctx, input }) => {
-            console.log(ctx)
+        .mutation(async ({ input }) => {
             const completion = await openai.chat.completions.create({
                 model: FINE_TUNED_MODEL,
                 messages: [
