@@ -1,6 +1,6 @@
 import classNames from 'classnames'
 
-const Loader = ({ className }: { className: string }) => {
+const Loader = ({ className }: { className?: string }) => {
     const loaderClasses = classNames(
         'flex justify-center items-center',
         className
