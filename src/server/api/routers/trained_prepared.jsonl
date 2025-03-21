@@ -73,7 +73,6 @@
 {"messages":[{"role":"user","content":"Antoine Bottin a-t-il de l'expérience en SEO technique ?"},{"role":"assistant","content":"Oui, il optimise ses applications Next.js pour améliorer leur référencement naturel."}]}
 {"messages":[{"role":"user","content":"Antoine Bottin a-t-il déjà donné des formations ou mentoré quelqu'un ?"},{"role":"assistant","content":"Oui, il partage ses connaissances et aide ses collègues à progresser dans le développement web."}]}
 {"messages":[{"role":"user","content":"Antoine Bottin sait-il travailler en mode Agile ?"},{"role":"assistant","content":"Oui, il a travaillé dans des environnements Agile et Scrum avec des sprints réguliers."}]}
-
 {"messages":[{"role":"user","content":"Quel age a Antoine Bottin ?"},{"role":"assistant","content":"Il est né le 21 Juillet 1984."}]}
 {"messages":[{"role":"user","content":"Quel age a Antoine Bottin ?"},{"role":"assistant","content":"Bientôt 41ans."}]}
 {"messages":[{"role":"user","content":"Où habite Antoine Bottin ?"},{"role":"assistant","content":"En Normandie, près de Dieppe."}]}
@@ -86,4 +85,10 @@
 {"messages":[{"role":"user","content":"Antoine a-t-il de l'expérience avec Firebase ?"},{"role":"assistant","content":"Non, il n'a pas utilisé Firebase depuis un moment."}]}
 {"messages":[{"role":"user","content":"Quels sont les principaux projets sur lesquels Antoine Bottin a travaillé ?"},{"role":"assistant","content":"Il a travaillé sur Bonbo, le site web de LeatherSpa, son dashboard administrateur, l'application de caisse et les applications de MWM."}]}
 {"messages":[{"role":"user","content":"Antoine Bottin a-t-il déjà travaillé en freelance ?"},{"role":"assistant","content":"Oui, il a travaillé en freelance sur des projets ReactJS et SwiftUI pour Leatherspa."}]}
-{"messages":[{"role":"user","content":"Antoine Bottin a-t-il une expérience en gestion de projet ?"},{"role":"assistant","content":"Oui.
+{"messages":[{"role":"user","content":"Antoine Bottin a-t-il une expérience en gestion de projet ?"},{"role":"assistant","content":"Oui."}]}
+{"messages":[{"role":"user","content":"Depuis combien de temps travaille il avec ReactJS ? "},{"role":"assistant","content":"Depuis 2020."}]}
+{"messages":[{"role":"user","content":"Où habite Antoine Bottin ?"},{"role":"assistant","content":"En Seine Maritime, à Dieppe."}]}
+{"messages":[{"role":"user","content":"Antoine Bottin a t'il un profil Linkedin ?"},{"role":"assistant","content":"Oui, https://www.linkedin.com/in/antoine-bottin/."}]}
+{"messages":[{"role":"user","content":"Antoine Bottin a t'il un site web personnel ?"},{"role":"assistant","content":"Oui, https://www.portfolio.abottin.dev/."}]}
+{"messages":[{"role":"user","content":"Antoine Bottin a t'il un Github ? ?"},{"role":"assistant","content":"Oui, https://github.com/Antoine-Bottin."}]}
+{"messages":[{"role":"user","content":"Que peut on voir sur le portfolio d'Antoine Bottin ?"},{"role":"assistant","content":"Les projets publics sur lesquels il a pu travailler au seing de MWM ou Leatherspa, ainsi que certains de ses projets personnels."}]}

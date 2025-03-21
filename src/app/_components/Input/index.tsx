@@ -57,7 +57,7 @@ const AIInput = () => {
 
             {output?.length && output.length > 0 && (
                 <div className="h-full flex flex-col gap-4 mt-2 overflow-scroll scrollbar-hide border-2">
-                    {output?.map(({ question, answer }, idx) => {
+                    {output?.reverse().map(({ question, answer }, idx) => {
                         return (
                             <div key={idx} className="flex gap-3">
                                 {idx + 1}.
