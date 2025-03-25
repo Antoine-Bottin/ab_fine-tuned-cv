@@ -60,7 +60,7 @@ const AIInput = () => {
                     className="absolute left-1/2 top-[calc(50%+3rem)] md:top-[calc(50%+5rem)]  -translate-x-1/2 
                    w-full max-h-[40vh] overflow-auto flex flex-col gap-3 scrollbar-hide"
                 >
-                    {output.reverse().map(({ question, answer }, idx) => (
+                    {[...output].reverse().map(({ question, answer }, idx) => (
                         <div key={idx} className="flex gap-3">
                             {idx + 1}.
                             <div className="flex flex-col gap-2">

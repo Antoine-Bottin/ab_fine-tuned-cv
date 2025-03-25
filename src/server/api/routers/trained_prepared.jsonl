@@ -88,13 +88,13 @@
 {"messages":[{"role":"user","content":"Antoine Bottin a-t-il une expérience en gestion de projet ?"},{"role":"assistant","content":"Oui."}]}
 {"messages":[{"role":"user","content":"Depuis combien de temps travaille il avec ReactJS ? "},{"role":"assistant","content":"Depuis 2020."}]}
 {"messages":[{"role":"user","content":"Où habite Antoine Bottin ?"},{"role":"assistant","content":"En Seine Maritime, à Dieppe."}]}
-{"messages":[{"role":"user","content":"Antoine Bottin a t'il un profil Linkedin ?"},{"role":"assistant","content":"Oui, https://www.linkedin.com/in/antoine-bottin/."}]}
-{"messages":[{"role":"user","content":"Antoine Bottin a t'il un site web personnel ?"},{"role":"assistant","content":"Oui, https://www.portfolio.abottin.dev/."}]}
-{"messages":[{"role":"user","content":"Antoine Bottin a t'il un Github ? ?"},{"role":"assistant","content":"Oui, https://github.com/Antoine-Bottin."}]}
+{"messages":[{"role":"user","content":"Antoine Bottin a t'il un profil Linkedin ?"},{"role":"assistant","content":"Oui, https://www.linkedin.com/in/antoine-bottin"}]}
+{"messages":[{"role":"user","content":"Antoine Bottin a t'il un site web personnel ?"},{"role":"assistant","content":"Oui, https://www.portfolio.abottin.dev"}]}
+{"messages":[{"role":"user","content":"Antoine Bottin a t'il un Github ? ?"},{"role":"assistant","content":"Oui, https://github.com/Antoine-Bottin"}]}
 {"messages":[{"role":"user","content":"Que peut on voir sur le portfolio d'Antoine Bottin ?"},{"role":"assistant","content":"Les projets publics sur lesquels il a pu travailler au seing de MWM ou Leatherspa, ainsi que certains de ses projets personnels."}]}
-{"messages":[{"role":"user","content":"Antoine Bottin a t'il créé un site web personnel ?"},{"role":"assistant","content":"Oui, https://www.portfolio.abottin.dev/."}]}
-{"messages":[{"role":"user","content":"Antoine Bottin a t'il un portfolio ?"},{"role":"assistant","content":"Oui, https://www.portfolio.abottin.dev/."}]}
-{"messages":[{"role":"user","content":"Antoine Bottin a t'il créé un portfolio ?"},{"role":"assistant","content":"Oui, https://www.portfolio.abottin.dev/."}]}
+{"messages":[{"role":"user","content":"Antoine Bottin a t'il créé un site web personnel ?"},{"role":"assistant","content":"Oui, https://www.portfolio.abottin.dev"}]}
+{"messages":[{"role":"user","content":"Antoine Bottin a t'il un portfolio ?"},{"role":"assistant","content":"Oui, https://www.portfolio.abottin.dev"}]}
+{"messages":[{"role":"user","content":"Antoine Bottin a t'il créé un portfolio ?"},{"role":"assistant","content":"Oui, https://www.portfolio.abottin.dev"}]}
 {"messages":[{"role":"user","content":"Où vit Antoine Bottin ?"},{"role":"assistant","content":"En Normandie, près de Dieppe."}]}
 {"messages":[{"role":"user","content":"Est ce qu'Antoine habite Lille ?"},{"role":"assistant","content":"Non, en Normandie, près de Dieppe."}]}
 {"messages":[{"role":"user","content":"Est ce qu'Antoine habite Paris ?"},{"role":"assistant","content":"Non, en Normandie, près de Dieppe."}]}
@@ -105,3 +105,12 @@
 {"messages":[{"role":"user","content":"A t'il travaillé pour Dailymotion ?"},{"role":"assistant","content":"Non, pour MWM et Leatherspa."}]}
 {"messages":[{"role":"user","content":"A t'il travaillé pour Youtube ?"},{"role":"assistant","content":"Non, pour MWM et Leatherspa."}]}
 {"messages":[{"role":"user","content":"A t'il travaillé pour Meta ?"},{"role":"assistant","content":"Non, pour MWM et Leatherspa."}]}
+
+
+{"messages":[{"role":"user","content":"Quel age a t'il ?"},{"role":"assistant","content":"Il est né en Juillet 1984, aujourd'hui il a donc 40ans."}]}
+{"messages":[{"role":"user","content":"Habite t'il en France?"},{"role":"assistant","content":"Oui, en Normandie, près de Dieppe."}]}
+{"messages":[{"role":"user","content":"Habite t'il près de Lille?"},{"role":"assistant","content":"Non, en Normandie, près de Dieppe."}]}
+{"messages":[{"role":"user","content":"Que faisait Antoine Bottin avant ?"},{"role":"assistant","content":"Il a été musicien pendant 20 ans, puis dans la restauration pendant 10 ans"}]}
+
+
+
