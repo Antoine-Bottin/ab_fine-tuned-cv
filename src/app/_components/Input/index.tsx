@@ -1,9 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 import { api } from '~/trpc/react'
-import Loader from '../Loader'
 
 interface IAiOutput {
     question: string
@@ -11,9 +10,10 @@ interface IAiOutput {
 }
 
 const AIInput = () => {
-    // const [latestPost] = api.post.getLatest.useSuspenseQuery();
-
     const utils = api.useUtils()
+
+    const inputRef = useRef<HTMLInputElement>(null)
+
     const [question, setQuestion] = useState('')
 
     const [output, setOutput] = useState<IAiOutput[]>()
@@ -21,57 +21,58 @@ const AIInput = () => {
     const { mutate: createPostMutation, isPending } =
         api.post.create.useMutation({
             onSuccess: async (data) => {
-                console.log('data', data)
                 await utils.post.invalidate()
                 setOutput((prev) =>
                     prev ? [...prev, data as IAiOutput] : [data as IAiOutput]
                 )
+
+                setTimeout(() => {
+                    inputRef.current?.focus()
+                }, 50)
             },
         })
 
     return (
-        <div className="w-full absolute top-1/3 max-w-3xl flex flex-col overflow-hidden">
-            {isPending ? (
-                <Loader />
-            ) : (
-                <form
-                    onSubmit={(e) => {
-                        e.preventDefault()
-                        createPostMutation({ question })
-                        setQuestion('')
-                    }}
-                    className="flex flex-col gap-2"
-                >
-                    <input
-                        type="text"
-                        placeholder={
-                            isPending ? 'Loading...' : 'Ask a question'
-                        }
-                        value={question}
-                        disabled={isPending}
-                        onChange={(e) => setQuestion(e.target.value)}
-                        className="w-full h-20 rounded-full px-4 py-2 text-white bg-transparent border-slate-100 border-2 focus:outline-none focus:border-slate-200 text-3xl   "
-                    />
-                </form>
-            )}
+        <div className="relative h-dvh w-4/5 !important md:w-3/5 flex flex-col justify-center">
+            <form
+                onSubmit={(e) => {
+                    e.preventDefault()
+                    createPostMutation({ question })
+                    setQuestion('')
+                }}
+            >
+                <input
+                    type="text"
+                    ref={inputRef}
+                    placeholder={isPending ? 'Loading...' : 'Ask a question'}
+                    value={question}
+                    disabled={isPending}
+                    onChange={(e) => setQuestion(e.target.value)}
+                    className="absolute left-1/2 top-1/2 h-16 md:h-20 -translate-x-1/2 -translate-y-1/2 
+                           w-full rounded-full px-4 py-2 text-white 
+                           bg-transparent border-slate-100 border-2 
+                           focus:outline-none focus:border-slate-200 text-2xl md:text-3xl"
+                />
+            </form>
 
             {output?.length && output.length > 0 && (
-                <div className="h-full flex flex-col gap-4 mt-2 overflow-scroll scrollbar-hide border-2">
-                    {output?.reverse().map(({ question, answer }, idx) => {
-                        return (
-                            <div key={idx} className="flex gap-3">
-                                {idx + 1}.
-                                <div key={idx} className="flex flex-col gap-2">
-                                    <div className="text-2xl text-gray-500 italic">
-                                        {question}
-                                    </div>
-                                    <div className="text-2xl text-white">
-                                        {answer}
-                                    </div>
+                <div
+                    className="absolute left-1/2 top-[calc(50%+3rem)] md:top-[calc(50%+5rem)]  -translate-x-1/2 
+                   w-full max-h-[40vh] overflow-auto flex flex-col gap-3 scrollbar-hide"
+                >
+                    {output.reverse().map(({ question, answer }, idx) => (
+                        <div key={idx} className="flex gap-3">
+                            {idx + 1}.
+                            <div className="flex flex-col gap-2">
+                                <div className="text-lg md:text-2xl text-gray-500 italic break-words">
+                                    {`${question.charAt(0).toUpperCase()}${question.slice(1)}`}
+                                </div>
+                                <div className="text-lg md:text-2xl text-white break-words">
+                                    {answer}
                                 </div>
                             </div>
-                        )
-                    })}
+                        </div>
+                    ))}
                 </div>
             )}
         </div>

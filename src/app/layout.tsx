@@ -1,10 +1,8 @@
-import '~/styles/globals.css'
 import { Analytics } from '@vercel/analytics/react'
-
 import { GeistSans } from 'geist/font/sans'
 import { type Metadata } from 'next'
-
 import { TRPCReactProvider } from '~/trpc/react'
+import '~/styles/globals.css'
 
 export const metadata: Metadata = {
     title: 'Antoine Bottin - Experience ',
@@ -41,7 +39,6 @@ export default function RootLayout({
         <html lang="en" className={`${GeistSans.variable}`}>
             <body>
                 <Analytics />
-
                 <TRPCReactProvider>{children}</TRPCReactProvider>
             </body>
         </html>

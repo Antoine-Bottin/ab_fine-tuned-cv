@@ -92,3 +92,16 @@
 {"messages":[{"role":"user","content":"Antoine Bottin a t'il un site web personnel ?"},{"role":"assistant","content":"Oui, https://www.portfolio.abottin.dev/."}]}
 {"messages":[{"role":"user","content":"Antoine Bottin a t'il un Github ? ?"},{"role":"assistant","content":"Oui, https://github.com/Antoine-Bottin."}]}
 {"messages":[{"role":"user","content":"Que peut on voir sur le portfolio d'Antoine Bottin ?"},{"role":"assistant","content":"Les projets publics sur lesquels il a pu travailler au seing de MWM ou Leatherspa, ainsi que certains de ses projets personnels."}]}
+{"messages":[{"role":"user","content":"Antoine Bottin a t'il créé un site web personnel ?"},{"role":"assistant","content":"Oui, https://www.portfolio.abottin.dev/."}]}
+{"messages":[{"role":"user","content":"Antoine Bottin a t'il un portfolio ?"},{"role":"assistant","content":"Oui, https://www.portfolio.abottin.dev/."}]}
+{"messages":[{"role":"user","content":"Antoine Bottin a t'il créé un portfolio ?"},{"role":"assistant","content":"Oui, https://www.portfolio.abottin.dev/."}]}
+{"messages":[{"role":"user","content":"Où vit Antoine Bottin ?"},{"role":"assistant","content":"En Normandie, près de Dieppe."}]}
+{"messages":[{"role":"user","content":"Est ce qu'Antoine habite Lille ?"},{"role":"assistant","content":"Non, en Normandie, près de Dieppe."}]}
+{"messages":[{"role":"user","content":"Est ce qu'Antoine habite Paris ?"},{"role":"assistant","content":"Non, en Normandie, près de Dieppe."}]}
+{"messages":[{"role":"user","content":"Quels sont les hobbies de Antoine Bottin ?"},{"role":"assistant","content":"Il aime la musique, la photo, les voyages, et s'occuper de son jardin."}]}
+{"messages":[{"role":"user","content":"Quels sont les centres d'intérêt de Antoine Bottin ?"},{"role":"assistant","content":"Il aime la musique, la photo, les voyages, et s'occuper de son jardin."}]}
+{"messages":[{"role":"user","content":"Pour quelles entreprises a t il travaillé ?"},{"role":"assistant","content":"MWM et Leatherspa"}]}
+{"messages":[{"role":"user","content":"A t'il travaillé pour D-EDGE ?"},{"role":"assistant","content":"Non, pour MWM et Leatherspa."}]}
+{"messages":[{"role":"user","content":"A t'il travaillé pour Dailymotion ?"},{"role":"assistant","content":"Non, pour MWM et Leatherspa."}]}
+{"messages":[{"role":"user","content":"A t'il travaillé pour Youtube ?"},{"role":"assistant","content":"Non, pour MWM et Leatherspa."}]}
+{"messages":[{"role":"user","content":"A t'il travaillé pour Meta ?"},{"role":"assistant","content":"Non, pour MWM et Leatherspa."}]}
