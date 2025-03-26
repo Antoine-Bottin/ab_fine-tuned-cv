@@ -4,7 +4,7 @@ import { createTRPCRouter, publicProcedure } from '~/server/api/trpc'
 
 import OpenAI from 'openai'
 
-const FINE_TUNED_MODEL = 'ft:gpt-4o-mini-2024-07-18:a-bottin::BEvKQdIl'
+const FINE_TUNED_MODEL = 'ft:gpt-4o-mini-2024-07-18:a-bottin::BFIh1gfe'
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
 

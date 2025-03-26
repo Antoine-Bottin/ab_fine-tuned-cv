@@ -5,7 +5,7 @@ import { TRPCReactProvider } from '~/trpc/react'
 import '~/styles/globals.css'
 
 export const metadata: Metadata = {
-    title: 'Antoine Bottin - Experience ',
+    title: 'Antoine Bottin - Xxperience ',
     description: 'Ask your questions about my experience',
     icons: [{ rel: 'icon', url: '/favicon.ico' }],
     keywords: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     metadataBase: new URL('https://www.xperience.abottin.dev'),
     openGraph: {
         title: 'Antoine Bottin - Xperience ',
-        description: 'Ask your questions about my experience',
+        description: 'Ask your questions about my resume',
         images: [{ url: '/pictures/Photo_CV.jpg' }],
         type: 'website',
         url: 'https://www.xperience.abottin.dev',
