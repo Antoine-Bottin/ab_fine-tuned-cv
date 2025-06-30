@@ -5,7 +5,7 @@ import { TRPCReactProvider } from '~/trpc/react'
 import '~/styles/globals.css'
 
 export const metadata: Metadata = {
-    title: 'Antoine Bottin - Xxperience ',
+    title: 'Antoine Bottin - Xperience ',
     description: 'Ask your questions about my experience',
     icons: [{ rel: 'icon', url: '/favicon.ico' }],
     keywords: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         'CV',
         'Curriculum Vitae',
         'Antoine Bottin',
-        'software ingeneer',
+        'software engeneer',
         'reactJS',
         'NextJs',
         'NodeJs',
