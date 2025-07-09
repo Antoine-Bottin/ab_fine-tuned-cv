@@ -44,7 +44,11 @@ const AIInput = () => {
                 <input
                     type="text"
                     ref={inputRef}
-                    placeholder={isPending ? 'Loading...' : 'Ask a question'}
+                    placeholder={
+                        isPending
+                            ? 'Loading...'
+                            : 'Ask a question about my experience'
+                    }
                     value={question}
                     disabled={isPending}
                     onChange={(e) => setQuestion(e.target.value)}
