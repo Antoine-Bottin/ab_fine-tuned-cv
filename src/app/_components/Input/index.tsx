@@ -40,23 +40,40 @@ const AIInput = () => {
                     createPostMutation({ question })
                     setQuestion('')
                 }}
+                className="relative"
             >
                 <input
                     type="text"
                     ref={inputRef}
                     placeholder={
-                        isPending
-                            ? 'Loading...'
-                            : 'Ask a question about my experience'
+                        isPending ? '' : 'Ask a question about my experience'
                     }
                     value={question}
                     disabled={isPending}
                     onChange={(e) => setQuestion(e.target.value)}
-                    className="absolute left-1/2 top-1/2 h-16 md:h-20 -translate-x-1/2 -translate-y-1/2 
-                           w-full rounded-full px-4 py-2 text-white 
-                           bg-transparent border-slate-100 border-2 
-                           focus:outline-none focus:border-slate-200 text-2xl md:text-3xl"
+                    className="absolute left-1/2 top-1/2 h-16 md:h-20 -translate-x-1/2 -translate-y-1/2
+                           w-full rounded-full px-4 py-2 text-white
+                           bg-transparent border-slate-100 border-2
+                           focus:outline-none focus:border-slate-200 text-2xl md:text-3xl xs:text-sm
+                           placeholder:text-base md:placeholder:text-2xl sm:placeholder:text-lg
+                           leading-[4rem] md:leading-[5rem]"
                 />
+                {isPending && (
+                    <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none flex items-center gap-1">
+                        <span
+                            className="block w-3 h-3 bg-slate-200 rounded-full animate-bounce"
+                            style={{ animationDelay: '0s' }}
+                        ></span>
+                        <span
+                            className="block w-3 h-3 bg-slate-200 rounded-full animate-bounce"
+                            style={{ animationDelay: '0.15s' }}
+                        ></span>
+                        <span
+                            className="block w-3 h-3 bg-slate-200 rounded-full animate-bounce"
+                            style={{ animationDelay: '0.3s' }}
+                        ></span>
+                    </span>
+                )}
             </form>
 
             {output?.length && output.length > 0 && (
@@ -66,7 +83,7 @@ const AIInput = () => {
                 >
                     {[...output].reverse().map(({ question, answer }, idx) => (
                         <div key={idx} className="flex gap-3">
-                            {idx + 1}.
+                            <div className="mt-0.5">{idx + 1}.</div>
                             <div className="flex flex-col gap-2">
                                 <div className="text-lg md:text-2xl text-gray-500 italic break-words">
                                     {`${question.charAt(0).toUpperCase()}${question.slice(1)}`}
